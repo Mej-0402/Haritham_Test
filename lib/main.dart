@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Screens/screen_login.dart';
+import 'Screens/screen_reportoffence.dart';
 import 'Screens/screen_signup.dart';
 void main(){
   runApp(const MyApp());
@@ -14,6 +15,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner:false,
       routes: {
         '/ScreenRegUser':(context) =>const ScreenRegUser(),
+        '/ScreenReportOffence':(context) =>const ReportOffence(),
+
        
       },
 home: const MyHome(
