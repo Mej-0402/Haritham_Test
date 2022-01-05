@@ -15,9 +15,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner:false,
       routes: {
         '/ScreenRegUser':(context) =>const ScreenRegUser(),
+
         '/ScreenReportOffence':(context) =>const ReportOffence(),
 
        
+
+        
+
       },
 home: const MyHome(
   
