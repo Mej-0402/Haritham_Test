@@ -258,6 +258,7 @@ class _ReportOffenceState extends State<ReportOffence> {
                         ),
                       ],
                     ),
+                    Row(),
                     
                   ],
                 ),
