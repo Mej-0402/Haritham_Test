@@ -5,7 +5,7 @@ import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:image_picker/image_picker.dart';
 
-import 'screen_location.dart';
+//import 'screen_location.dart';
 
 class ReportOffence extends StatefulWidget {
   const ReportOffence({Key? key}) : super(key: key);
@@ -22,6 +22,10 @@ class _ReportOffenceState extends State<ReportOffence> {
   var _altitude = "";
   var _speed = "";
   var _address = "";
+
+  // String valueChoose;
+  // List listItem = ["offence 1","offence 2","offence 3","offence 4"];
+  
 
   Future<void> _updatePosition() async {
     Position pos = await _determinePosition();
@@ -256,16 +260,69 @@ class _ReportOffenceState extends State<ReportOffence> {
                                 ),
                           ),
                         ),
+                       
                       ],
                     ),
-                    Row(),
+                    Row(
+                      // children: [
+                      //   Container(child: DropdownButton(
+                      //     value: valueChoose,
+                      //     onChanged: (newValue){
+                      //       setState(() {
+                      //         valueChoose = newValue;
+                      //       });
+                      //     },
+                      //     items:listItem.map((valueItem){
+                      //       return DropdownMenuItem(value: valueItem,
+                      //       child: Text(valueItem),)
+                      //     })
+                      //   ),)
+                      // ],
+     
+
+                    ),
                     
                   ],
                 ),
 
               ),
 
+ Column(
+                          children: [
+                            Container(
+                          padding: const EdgeInsets.all(20),
+                          child: ElevatedButton.icon(
+                            onPressed: () =>
+                                  Navigator.pushNamed(context,'/ScreenMainHome'),
 
+                            icon: const Icon(Icons
+                                .crop_original_rounded), //icon data for elevated button
+                            label: const Text("Mainhome",
+                                style: TextStyle(fontSize: 18)), //label text
+                            style: ElevatedButton.styleFrom(
+                                primary: Colors
+                                    .green //elevated btton background color
+                                ),
+                          ),
+                        ),
+                         Container(
+                          padding: const EdgeInsets.all(20),
+                          child: ElevatedButton.icon(
+                            onPressed: () =>
+                                  Navigator.pushNamed(context,'/ScreenBottomNav'),
+
+                            icon: const Icon(Icons
+                                .crop_original_rounded), //icon data for elevated button
+                            label: const Text("BottomNavBar",
+                                style: TextStyle(fontSize: 18)), //label text
+                            style: ElevatedButton.styleFrom(
+                                primary: Colors
+                                    .green //elevated btton background color
+                                ),
+                          ),
+                        ),
+                          ],
+                        )
 
             ],
           ),
