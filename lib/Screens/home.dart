@@ -97,7 +97,7 @@ class _ScreenHomeState extends State<ScreenHome> {
           height: 50.0,
           color: Colors.green,
           backgroundColor: Colors.white,
-          items: [
+          items: const [
             Icon(
               Icons.home,
               color: Colors.white,
