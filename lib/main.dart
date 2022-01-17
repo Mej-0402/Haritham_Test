@@ -31,6 +31,12 @@ class MyApp extends StatelessWidget {
         //'/ScreenLocation':(context) =>const LocationCapture(),
         //'/TestDemo':(context) =>const TestDemo(),
       },
+       theme: ThemeData(
+        primarySwatch: Colors.green,
+        textSelectionTheme: TextSelectionThemeData(
+          cursorColor: Colors.green
+        ),
+      ),
       home: const ScreenHome(),
     );
   }

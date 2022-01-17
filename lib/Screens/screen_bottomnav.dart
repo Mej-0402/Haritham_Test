@@ -39,3 +39,31 @@ onTap: (index){
     );
   }
 }
+// bottomNavigationBar: 
+        // BottomNavigationBar(
+        //   elevation: 0.0,
+        //   selectedItemColor: Colors.white,
+        //   unselectedItemColor: Colors.white,
+        //   backgroundColor: Colors.green,
+        //   currentIndex: _selectedIndex,
+        //   onTap: (value) {
+        //     setState(() {
+        //       _selectedIndex = value;
+        //     });
+        //   },
+        //   items: const [
+        //     BottomNavigationBarItem(
+        //         icon: Icon(
+        //           Icons.home,
+        //         ),
+        //         label: 'home'),
+        //     BottomNavigationBarItem(
+        //         icon: Icon(
+        //           Icons.camera_alt_rounded,
+        //           size: 50.0,
+        //         ),
+        //         label: 'Report An Offence'),
+        //     BottomNavigationBarItem(
+        //         icon: Icon(Icons.logout_rounded ),label: 'Logout'),
+        //   ],
+        // ),
