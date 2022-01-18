@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 // import 'Screens/screen_mainhome.dart';
 // import 'Screens/screen_reportoffence.dart';
 // import 'Screens/screen_signup.dart';
+import 'Screens/RecentOffenceDetail.dart';
 import 'Screens/home.dart';
 
 void main() {
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         // '/ScreenBottomNav': (context) => const ScreenBottomNav(),
         //'/ScreenLocation':(context) =>const LocationCapture(),
         //'/TestDemo':(context) =>const TestDemo(),
+      // '/ RecentOffenceDetailPage':(context) =>const RecentOffenceDetailPage(),
       },
        theme: ThemeData(
         primarySwatch: Colors.green,
